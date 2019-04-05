@@ -1,0 +1,14 @@
+resources:
+    App\Entity\User:
+        attributes:
+            normalization_context:
+                groups: ['user:read']
+            denormalization_context:
+                groups: ['user:write']
+        collectionOperations:
+            get: ~
+            post: ~
+        itemOperations:
+            get: ~
+            put: ~
+            delete: ~

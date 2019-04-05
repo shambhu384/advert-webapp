@@ -1,0 +1,7 @@
+# fixtures/dummy.yaml
+
+App\Entity\Advert:
+    advert_{1..10}:
+        category: '@category_1'
+        title: <name()>
+        description: ''

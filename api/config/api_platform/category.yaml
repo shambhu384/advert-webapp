@@ -1,0 +1,14 @@
+resources:
+    App\Entity\Category:
+        attributes:
+            normalization_context:
+                groups: ['read_category']
+            denormalization_context:
+                groups: ['write_category']
+        collectionOperations:
+            get: ~
+            post: ~
+        itemOperations:
+            get: ~
+            put: ~
+            delete: ~

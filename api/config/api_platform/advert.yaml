@@ -1,0 +1,14 @@
+resources:
+    App\Entity\Advert:
+        attributes:
+            normalization_context:
+                groups: ['read', 'read_advert']
+            denormalization_context:
+                groups: ['write', 'write_advert']
+        collectionOperations:
+            get: ~
+            post: ~
+        itemOperations:
+            get: ~
+            put: ~
+            delete: ~
